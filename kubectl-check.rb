@@ -2,21 +2,21 @@
 class KubectlCheck < Formula
   desc "Check Kubernetes resource"
   homepage "https://github.com/Ladicle/kubectl-check"
-  version "1.1.0"
+  version "1.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/Ladicle/kubectl-check/releases/download/v1.1.0/kubectl-check_darwin-amd64.tar.gz"
-    sha256 "b7a6a6ef33c0d308e14f71fac1ccee8aad7b4885f21d8b41b8369cdba3d20adf"
+    url "https://github.com/Ladicle/kubectl-check/releases/download/v1.1.1/kubectl-check_darwin-amd64.tar.gz"
+    sha256 "2a3d5107b745e60d3ae54b5cf7e4de18eac7c3f3197fbbe2a0a46164a4ff6968"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/Ladicle/kubectl-check/releases/download/v1.1.0/kubectl-check_linux-amd64.tar.gz"
-      sha256 "d88fc12dc21e7d6fa33590a562d97f20e5e9046e38de0b60fbdf8e0809f6bd8f"
+      url "https://github.com/Ladicle/kubectl-check/releases/download/v1.1.1/kubectl-check_linux-amd64.tar.gz"
+      sha256 "80419f155a339b54ec7a40acf0927e416e85bbd121d832f3e015b8bbbae87129"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Ladicle/kubectl-check/releases/download/v1.1.0/kubectl-check_linux-arm64.tar.gz"
-        sha256 "af1106e6cc3f369bf8401be5ba68a6b32674de5c5eb40037522d3ace66cd4c71"
+        url "https://github.com/Ladicle/kubectl-check/releases/download/v1.1.1/kubectl-check_linux-arm64.tar.gz"
+        sha256 "b798a1bcbc13ab93a48bd22d7fc88e4b3743dfa1be900b5fcc4cdce8a59db08c"
       else
       end
     end
