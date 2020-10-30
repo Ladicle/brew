@@ -7,16 +7,16 @@ class KubectlCheck < Formula
 
   if OS.mac?
     url "https://github.com/Ladicle/kubectl-check/releases/download/v1.1.1/kubectl-check_darwin-amd64.tar.gz"
-    sha256 "2a3d5107b745e60d3ae54b5cf7e4de18eac7c3f3197fbbe2a0a46164a4ff6968"
+    sha256 "712b164c9809921c84860eb29d4aab8498615a15770db4b8ebab34d4eb81ae17"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/Ladicle/kubectl-check/releases/download/v1.1.1/kubectl-check_linux-amd64.tar.gz"
-      sha256 "80419f155a339b54ec7a40acf0927e416e85bbd121d832f3e015b8bbbae87129"
+      sha256 "a1249195ca632d6d83a17c7e5b71e397e40e00301824fdfd038cb1ea2f0ad7d4"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/Ladicle/kubectl-check/releases/download/v1.1.1/kubectl-check_linux-arm64.tar.gz"
-        sha256 "b798a1bcbc13ab93a48bd22d7fc88e4b3743dfa1be900b5fcc4cdce8a59db08c"
+        sha256 "d680257e6888960d85919bc30cea629b8df9c6682faff03c7fac031738125196"
       else
       end
     end
